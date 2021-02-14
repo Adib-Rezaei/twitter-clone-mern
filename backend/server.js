@@ -69,4 +69,6 @@ if (process.env.NODE_ENV === 'production'){
   })
 }
 
+console.log(path.resolve(__dirname,'..', 'twitter-clone', 'build', 'index.html'));
+
 app.listen(port, () => console.log(`listening on ${port}`));
