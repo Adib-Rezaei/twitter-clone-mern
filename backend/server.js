@@ -25,12 +25,15 @@ connection.once('open', () => {
     console.log("MongoDB success fully connected");
 })
 
-
+app.use(express.static(path.join(__dirname,'..','twitter-clone', 'build')));
 
 app.use(express.json());
 
 app.use(
-    cors()
+    cors({
+      origin: `https://twitter-mern-pr.herokuapp.com`, // <-- location of the react app were connecting to
+      credentials: true,
+    })
   );
   app.use(
     session({
@@ -61,14 +64,12 @@ app.get('/logout', (req, res) => {
   res.json("logged out");
 })
 
-if (process.env.NODE_ENV === 'production'){
-  app.use(express.static('../twitter-clone/build'));
+// if (process.env.NODE_ENV === 'production'){
+  
 
   app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '..', 'twitter-clone', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname,'..','twitter-clone', 'build', 'index.html'));
   })
-}
+// }
 
-console.log(path.resolve(__dirname,'..', 'twitter-clone', 'build', 'index.html'));
-
-app.listen(port, () => console.log(`listening on ${port}`));
+app.listen(port, () => console.log(`listening on http://localhost:${port}`));
