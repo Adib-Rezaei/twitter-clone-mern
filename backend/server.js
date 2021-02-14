@@ -6,6 +6,7 @@ const passportLocal = require("passport-local").Strategy;
 const cookieParser = require("cookie-parser");
 const bcrypt = require("bcryptjs");
 const session = require("express-session");
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -26,6 +27,10 @@ connection.once('open', () => {
 
 if (process.env.NODE_ENV === 'production'){
   app.use(express.static('twitter-clone/build'));
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'twitter-clone', 'build', 'index.html'));
+  })
 }
 
 app.use(express.json());
