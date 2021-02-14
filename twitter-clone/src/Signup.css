@@ -1,0 +1,32 @@
+.signup-btn {
+    background-color: #5FA00C !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 20px !important;
+    width: 300px !important;
+    height: 50px !important;
+    /* margin: 20px !important; */
+    padding: 0px !important;
+}
+
+#link-to-login {
+    color: gray;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#link-to-login:hover {
+    color: #5FA00C !important;
+}
+
+#link-to-icon {
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#link-to-icon:hover {
+    color: #5FA00C !important;
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.container {
+    margin: 0px;
+    padding: 0px;
+    background: #9053c7;
+    background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'poppins';
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    min-width: 1100px;
+    min-height: 700px;
+    border-radius: 5%;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-left: auto;
+}
+
+.card img {
+    
+    width: 20em;
+    height: 20em;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    /* margin: 5em; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-right: auto;
+}
+
+form > input {
+    margin-bottom: 20px;
+    padding: 18px;
+    padding-left: 25px;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+    outline: none;
+    border: none;
+}
+
+#link-to-signup {
+    color: gray;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#link-to-signup:hover {
+    color: var(--twitter-color);
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.login-btn {
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 20px !important;
+    width: 300px !important;
+    height: 50px !important;
+    /* margin: 20px !important; */
+    padding: 0px !important;
+}
+
+.MuiButton-label {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.MuiTouchRipple-root {
+    margin: 0px;
+}

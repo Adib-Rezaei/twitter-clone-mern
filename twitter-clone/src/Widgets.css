@@ -1,0 +1,13 @@
+.widgets {
+    flex: 0.3;
+}
+
+.widgets_container {
+    margin-left: 20px;
+    margin-top: 20px;
+    /* margin-right: 300px; */
+}
+
+.tweetBox_input input {
+    outline: none;
+}

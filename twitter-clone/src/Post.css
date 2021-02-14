@@ -1,0 +1,88 @@
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+}
+
+.post_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.post_footer > Button {
+    padding: 0 ;
+    height: 2em ;
+}
+
+.post_footer .fav-btn :hover {
+    background-color: #fff3f2;
+    color: #f44336;
+    text-decoration: underline;
+}
+
+.post_footer .retweet-btn :hover {
+    background-color: #dbffeb;
+    color: #00c853;
+    text-decoration: underline;
+}
+
+.post_footer .reply-btn :hover {
+    background-color: #c6ecff;
+    color: #039be5;
+    text-decoration: underline;
+}
+
+.post_footer .fav-btn-active {
+    color: #f44336;
+    text-decoration: underline;
+}
+
+.post_footer .retweet-btn-active {
+    color: #00c853;
+    text-decoration: underline;
+}
+
+.post_footer .reply-btn-active {
+    color: #039be5;
+    text-decoration: underline;
+}
+
+.post_footer p {
+    margin: 0;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+.post_headerText {
+    font-size: 15px;
+}
+
+.post_headerText span {
+    color: gray;
+    font-size: 13px !important;
+    margin-left: 10px;
+}
+
+.post_body {
+    flex: 1;
+    padding: 10px;
+}
+
+.post_avatar {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.post_headerText h3 {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.post_headerDescription p {
+    margin-top: 5px;
+    word-wrap: break-word;
+    width: 400px;
+}
