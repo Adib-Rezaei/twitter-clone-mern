@@ -58,7 +58,7 @@ $ npm start
     * [ ] name of users have a link to their profiles in notification
     * [ ] order notifications with timestamp
 
-* [] database
+* [ ] database
     * [ ] put timestamp in posts
     * [ ] tweets have userID
     * [ ] users have list of tweets with ids scpecified
