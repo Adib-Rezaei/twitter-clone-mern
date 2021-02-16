@@ -6,6 +6,8 @@
 
 First project in order to demonstrate MongoDB/Express/React/Nodejs web app.
 
+![GIF](https://github.com/Adib-Rezaei/twitter-clone-mern/blob/master/sample.gif)
+
 ## Quick Start
 ### Back-end
 Go to the root directory and run these commands:
